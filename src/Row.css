@@ -1,0 +1,36 @@
+.row {
+    margin-left: 20px;
+}
+
+.row__movielist{
+    display: flex;
+    /*Adds scrolls for this container, vertical: no scroll; horizontal scroll only reauired*/
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+/* Hide scroll bar*/
+.row__movielist::-webkit-scrollbar {
+    display: none;
+}
+
+.row__movieposter{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms; /*Slow pop up effect*/
+}
+
+.row__movieposter:hover{
+    transform: scale(1.08);    
+}
+
+.row__movieposter_large {
+    max-height: 250px;
+}
+
+.row__movieposter_large:hover {
+    transform: scale(1.09);
+}

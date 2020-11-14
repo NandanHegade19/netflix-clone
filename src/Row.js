@@ -23,7 +23,7 @@ function Row({title, fetchURL, isLargeRow}) {
         fetchData();
     },[fetchURL]); //run once for different URL for each row loads. fetchURL is coming from props.
 
-    //youtube "options"
+    //youtube player "options"
     const opts = {
         height: "390",
         width: "100%",
